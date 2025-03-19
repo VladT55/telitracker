@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>To-Do-List</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navigation">
+        <ul>
+          <li>TeliTrack</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Отслеживайте свой прогресс по задачам</h1>
+      <section class="blok-add-task">
+        <form id="add-task">
+          <label id="title-form" for="add">Введите задачу</label>
+          <input id="task-input" name="field-input" placeholder="Купить хлеб" />
+          <input
+            id="button-add"
+            type="submit"
+            name="button-add"
+            value="Добавить"
+          />
+        </form>
+      </section>
+      <div class="lists">
+        <section class="to-do-list"><h2>Список задач</h2></section>
+        <section class="tasks-done-list"><h2>Выполненные задачи</h2></section>
+      </div>
+    </main>
+    <script src="js/script.js"></script>
+  </body>
+</html>
