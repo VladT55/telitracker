@@ -1,2 +1,98 @@
 * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul li {
+  list-style: none;
+}
+
+header {
+  background-color: #87c0fd4f;
+  color: white;
+  min-height: 48px;
+  width: auto;
+}
+
+main {
+  background-color: #f0f0f000;
+  background-image: url(/img/background-image.jpeg);
+  background-size: cover;
+  height: auto;
+  width: auto;
+}
+
+.nav-list {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+  gap: 20px;
+  height: 100%;
+}
+
+.nav-item-button {
+  width: 146px;
+  height: 32px;
+}
+
+.nav-item-search {
+  width: 200px;
+  height: 32px;
+  padding-left: 5px;
+}
+
+.nav-item-notification-button {
+  border: none;
+  background-color: transparent;
+  background-image: url(/img/nav-item-notification-button.svg);
+  width: 32px;
+  height: 32px;
+}
+
+.nav-item-info-button {
+  border: none;
+  background-color: transparent;
+  background-image: url(/img/nav-item-info-button.svg);
+  width: 32px;
+  height: 32px;
+}
+
+.nav-item-singin-button {
+  border: none;
+  background-color: transparent;
+  background-image: url(/img/nav-item-singin-button.svg);
+  width: 32px;
+  height: 32px;
+}
+
+.block-title {
+  background-color: #a0cdff1e;
+  height: 55px;
+  width: auto;
+}
+
+h1 {
+  font-style: normal;
+  color: black;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.boards {
+  margin-top: 12px;
+  margin-left: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.boader-item {
+  min-width: 270px;
+  min-height: 300px;
+  background-color: rgb(86, 86, 86);
+  border-radius: 8px;
 }
