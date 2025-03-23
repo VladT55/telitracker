@@ -19,7 +19,7 @@ main {
   background-color: #f0f0f000;
   background-image: url(/img/background-image.jpeg);
   background-size: cover;
-  height: auto;
+  min-height: 100vh;
   width: auto;
 }
 
@@ -90,9 +90,88 @@ h1 {
   gap: 12px;
 }
 
-.boader-item {
-  min-width: 270px;
-  min-height: 300px;
-  background-color: rgb(86, 86, 86);
+.board-item {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(241, 242, 244, 1);
+  border: rgba(241, 242, 244, 1) 1px solid;
+  border-radius: 12px;
+  min-height: 88px;
+  max-height: calc(100vh - 150px);
+  width: 270px;
+}
+
+.board-item-header {
+  flex-shrink: 0;
+  height: 45.5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.board-h3 {
+  font-style: normal;
+  color: black;
+  margin-top: 8px;
+  margin-left: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 12px;
+}
+
+.borad-menu {
+  display: block;
+  text-align: center;
+  min-height: 32px;
+  min-width: 32px;
+  border: none;
+  background-color: transparent;
+  margin-top: 8px;
+  margin-right: 9px;
+}
+
+.borad-menu:hover {
+  color: rgb(192, 192, 192);
+}
+
+.tasks-list {
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.task-item {
+  background-color: rgba(255, 255, 255, 1);
+  border: rgba(255, 255, 255, 1) 1px solid;
   border-radius: 8px;
+  min-height: 35px;
+  width: inherit;
+  margin-top: 8px;
+  margin-left: 8px;
+  margin-right: 8px;
+  padding-top: 8px;
+  padding-bottom: 4px;
+  padding-left: 12px;
+  overflow-wrap: break-word;
+}
+
+.board-add-task {
+  flex-shrink: 0;
+  height: 32px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 9px;
+  border: none;
+  background-color: transparent;
+  height: 32px;
+  margin: 8px;
+}
+
+.board-add-task:hover {
+  color: rgb(192, 192, 192);
+}
+
+.board-add-task img {
+  width: 16px;
+  height: 16px;
 }
