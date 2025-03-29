@@ -32,54 +32,50 @@
       <div class="block-title">
         <h1 class="block-title-h1">Все задачи</h1>
       </div>
-      <div class="boards">
-        <dvi class="board-item">
-          <div class="board-item-header">
-            <h3 class="board-h3">Личные задачи</h3>
-            <button class="borad-menu">...</button>
-          </div>
-          <ul class="tasks-list">
-            <li class="task-item" tabindex="0">
-              Покормить кота и сходить с ним на улицу в магазин
-            </li>
-            <li class="task-item" tabindex="0">Помыть посуду</li>
-            <li class="task-item" tabindex="0">Сделать уборку</li>
-            <li class="task-item" tabindex="0">
-              Покормить кота и сходить с ним на улицу в магазин
-            </li>
-            <li class="task-item" tabindex="0">Помыть посуду</li>
-            <li class="task-item" tabindex="0">Сделать уборку</li>
-            <li class="task-item" tabindex="0">
-              Покормить кота и сходить с ним на улицу в магазин
-            </li>
-            <li class="task-item" tabindex="0">Помыть посуду</li>
-            <li class="task-item" tabindex="0">Сделать уборку</li>
-            <li class="task-item" tabindex="0">
-              Покормить кота и сходить с ним на улицу в магазин
-            </li>
-            <li class="task-item" tabindex="0">Помыть посуду</li>
-            <li class="task-item" tabindex="0">Сделать уборку</li>
-            <li class="task-item" tabindex="0">Помыть посуду</li>
-            <li class="task-item" tabindex="0">Сделать уборку</li>
-            <li class="task-item" tabindex="0">
-              Покормить кота и сходить с ним на улицу в магазин
-            </li>
-            <li class="task-item" tabindex="0">Помыть посуду</li>
-            <li class="task-item" tabindex="0">Сделать уборку</li>
-            <li class="task-item" tabindex="0">Помыть посуду</li>
-            <li class="task-item" tabindex="0">Сделать уборку</li>
-          </ul>
-          <button class="board-add-task">
-            <img
-              src="/img/icon-button-add-task.svg"
-              alt=""
-              class="board-add-task-img"
-            />Добавить карточку
-          </button>
-        </dvi>
-      </div>
+      <div class="boards"></div>
     </main>
     <footer></footer>
     <script type="module" src="/js/main.js"></script>
+    <!-- Модальные окна -->
+    <div class="modal-overlay" id="board-modal">
+      <div class="modal">
+        <div class="modal-header">
+          <h3>Добавить доску</h3>
+          <button class="modal-close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+          <input
+            type="text"
+            id="modal-input"
+            placeholder="Введите названии доски"
+          />
+        </div>
+        <div class="modal-footer">
+          <button class="create-board">Создать</button>
+          <button class="close-modal">Отмена</button>
+        </div>
+      </div>
+    </div>
+    <!-- Шаблоны -->
+    <template id="board-template">
+      <dvi class="board-item">
+        <div class="board-item-header">
+          <h3 class="board-h3">Личные задачи</h3>
+          <button class="borad-menu">...</button>
+        </div>
+        <ul class="tasks-list">
+          <li class="task-item" tabindex="0">
+            Покормить кота и сходить с ним на улицу в магазин
+          </li>
+        </ul>
+        <button class="board-add-task">
+          <img
+            src="/img/icon-button-add-task.svg"
+            alt=""
+            class="board-add-task-img"
+          />Добавить карточку
+        </button>
+      </dvi>
+    </template>
   </body>
 </html>
